@@ -1,0 +1,39 @@
+//colours
+$black: #000;
+$dark-grey: #414141;
+$grey: #EBEBEB;
+$white: #fff;
+$blue: red;
+
+//main elements
+$body-colour: $white;
+$right-menu: $grey;
+$page-one-colour: $blue;
+$contact-area: darken($page-one-colour, 20);
+$border-line: $grey;
+
+//fonts
+$h1-size: 25px;
+$h2-size: 19px;
+$h3-size: 20px;
+$p-size: 18px;
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$line-height: 1.5;
+$link-colour: $white;
+
+
+//widths
+$wrapper-width: 75%;
+$menu-width: 25%;
+
+//heights
+$header-height: 90px;
+
+
+
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//      -moz-border-radius: $radius;
+//       -ms-border-radius: $radius;
+//           border-radius: $radius;
+// }
