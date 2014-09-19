@@ -1,0 +1,114 @@
+!!!
+%html
+  %head 
+
+  %body
+    %div
+
+    .block{:style => "height: 793px; width: 1423px; display: inline-block;"}
+      .centered{:style => "margin-left: auto;"}
+        %header.row-fluid
+          .header-wrapper.row-fluid{:style => "background-image: url('header_pattern.png');"}
+            %object{:data => "kerboodle_logo_rgb_green.svg", :style => "overflow: hidden; width: 391px; height: 169px;", :type => "image/svg+xml"}
+              %img{:alt => "Oxford platform", :src => "kerboodle_logo_big.png"}/
+            #login_holder
+              %form#user_new.form-horizontal{"accept-charset" => "UTF-8", :action => "http://www.kerboodle.com/users/login", :autocomplete => "on", :method => "post"}
+                %div{:style => "margin: 0px; padding: 0px; display: inline;"}
+                  %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                  %input{:name => "authenticity_token", :type => "hidden", :value => "7WkRy71JoWH7B+eCdhOLP81FPKpuvYbftwAYri0sgDY="}/
+                %fieldset
+                  .row-fluid.first-row
+                    .span6
+                      .control-group
+                        .remember
+                          %input{:name => "user[remember_me]", :type => "hidden", :value => "0"}/
+                          %input#user_remember_me{:autocomplete => "on", :name => "user[remember_me]", :type => "checkbox", :value => "1"}/
+                          %label.checkbox{:for => "user_remember_me"} Remember me
+                    #forgot_pwd
+                      %a.forgot-details{:href => "http://www.kerboodle.com/users/password/new"} Forgot my details
+                  .alert-error{:style => "padding: 0px 5px; margin: 0px 10px 5px;"}
+                  .control-group
+                    %label.control-label{:for => "user_login"} Username
+                    .controls
+                      %input#user_login.input-small{:autocomplete => "on", :autofocus => "autofocus", :name => "user[login]", :size => "30", :type => "text", :value => "teacher15"}/
+                  .control-group
+                    %label.control-label{:for => "user_password"} Password
+                    .controls
+                      %input#user_password.input-small{:autocomplete => "on", :name => "user[password]", :size => "30", :type => "password"}/
+                  .control-group
+                    %label.control-label{:for => "user_institution_code"} Institution Code
+                    .controls
+                      %input#user_institution_code.input-small{:autocomplete => "on", :name => "user[institution_code]", :size => "30", :type => "text", :value => ""}/
+                  %input#user_return_to{:name => "user_return_to", :type => "hidden"}/
+                  .control-group
+                    %input#user_submit.btn.btn-primary{:name => "commit", :type => "submit", :value => "Login"}/
+        #body.row-fluid
+          #body-wrapper
+            #kerboodle-home-content
+              %h1.with-sub-heading
+                Welcome to
+                %em
+                  %strong next generation
+                Kerboodle –
+              %h2.sub-head Lessons, Resources, Assessment, and Kerboodle Books
+              .box-ad.box-ad-pink
+                %h2 Changes to Kerboodle
+                %p
+                  We are working hard to make Kerboodle even better, moving courses (originally published by Nelson Thornes) on to our next generation platform.
+                  %a{:href => "http://fdslive.oup.com/www.oup.com/oxed/oxbox-support/nextgen/", :target => "_top"} Find out more
+                  about the changes.
+              .box-ad.box-ad-blue
+                %h2 Trouble logging in?
+                %p
+                  Please note that logins for Nelson Thornes Kerboodle were not transferred across.
+                  %br/
+                  Teachers - look out for your activation email and
+                  %a{:href => "http://fdslive.oup.com/www.oup.com/oxed/oxbox-support/teachers/gettingstarted/", :target => "_top"} follow these steps
+                  to get started.
+              %h3 Latest information
+              %article
+                .meta
+                  .spricon-talk
+                  .spricon-date
+                  %span.date
+                    5th of September
+                %h2 Getting started
+                %p
+                  Remember to appoint an administrator to create your student and teacher user accounts. Download the
+                  %a{:href => "http://fdslive.oup.com/www.oup.com/oxed/secondary/kerboodle/WEB_K40534_Kerboodle_OSP_Admin_Guide.pdf", :target => "_top"} Administrator Guide
+                  for more information. Our
+                  %a{:href => "http://fdslive.oup.com/www.oup.com/oxed/secondary/kerboodle/K40533_Kerboodle_Quick_Start_Guide_webHi.pdf", :target => "_top"} Getting Started Guide
+                  is also available to help you get up and running.
+                  %br/
+                  %br/
+                  You can also visit our dedicated
+                  %a{:href => "http://fdslive.oup.com/www.oup.com/oxed/oxbox-support/", :target => "_top"} support site
+                  or call 01536 452960 for technical support.
+                .meta-footer
+                  / %span.read-more
+                  / %a{:href => ""}
+                  / Read more
+              %article
+                .meta
+                  .spricon-cog
+                  .spricon-date
+                  %span.date
+                    21st of August
+                %h2 Get ready for next generation
+                %p
+                  The (Nelson Thornes) Kerboodle site is now closed. If you have any of the
+                  %a{:href => "http://fdslive.oup.com/www.oup.com/oxed/secondary/kerboodle/Next_Generation_Kerboodle_courses_prices.pdf", :target => "_top"} following courses
+                  and you have not already done so, please contact us about your subscription to ensure you can start using next generation Kerboodle from 1st September. Call Customer Services on 01536 452960 or email support@kerboodle.com.
+                .meta-footer
+                  / %span.read-more
+                  / %a{:href => ""}
+                  / Read more
+        %footer.row-fluid
+          %a{:href => "http://global.oup.com/", :target => "blank"} OUP.com
+          %a{:href => "http://global.oup.com/education/content/secondary/online-products/privacy/", :target => "blank"} Privacy Policy
+          %a{:href => "http://global.oup.com/education/content/secondary/online-products/legal/", :target => "blank"} Legal Notice
+          %a{:href => "http://global.oup.com/cookiepolicy/?siteid=oxbox-online", :target => "blank"} Cookie Policy
+          %a{:href => "http://www.oxfordsecondary.co.uk/oxbox-support/", :target => "blank"} Support
+          %a{:href => "https://global.oup.com/education/help/technical-support/helpdesk-platform?region=uk", :target => "blank"} Contact
+          %a{:href => "http://global.oup.com/education/content/secondary/online-products/terms/", :target => "blank"} Terms and Conditions
+
